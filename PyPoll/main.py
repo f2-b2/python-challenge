@@ -17,7 +17,7 @@ candidates = []
 with open(csvpath) as csvfile:
     csvreader = csv.reader(csvfile, delimiter=",")
 
-    # Read the header row first
+    # Store the header row
     csvheader = next(csvfile)
     #print(csvheader)
 
