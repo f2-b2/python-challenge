@@ -13,7 +13,7 @@ county = []
 candidate = []
 candidates = []
 
-#Fill lists
+# Fill lists
 with open(csvpath) as csvfile:
     csvreader = csv.reader(csvfile, delimiter=",")
     for row in csvreader:
@@ -41,11 +41,11 @@ def unique_candidates(list_c):
             unique_list.append(x)
     return unique_list
 
-#Call function to count votes & create the candidates list
+# Call function to count votes & create the candidates list
 votes = count_votes(csvpath)
 candidates = unique_candidates(candidate)
 
-#print results
+# print results
 print("Election Results")
 print("-------------------------")
 print(f"Total Votes:  {count_votes(csvpath)}")
@@ -57,7 +57,7 @@ print("-------------------------")
 print(f"Winner: {candidates[1]}")
 print("-------------------------")
 
-# -->>  Export a text file with the results
+# Export a text file with the results
 election_file = os.path.join("Analysis", "election_data.txt")
 with open(election_file, "w") as outfile:
 
