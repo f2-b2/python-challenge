@@ -19,7 +19,7 @@ with open(csvpath) as csvfile:
 
     # Store the header row
     csvheader = next(csvfile)
-    #print(csvheader)
+
 
     for row in csvreader:
         # Add ballotID
