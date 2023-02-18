@@ -128,3 +128,4 @@ dmypy.json
 # Pyre type checker
 .pyre/
 PyPoll/JupyterScript.ipynb
+PyBank/BankScript.ipynb
